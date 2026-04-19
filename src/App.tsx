@@ -3,6 +3,7 @@ import { Header } from "./components/Header/Header";
 import { Banner } from "./components/Banner/Banner";
 import { Benefits } from "./components/Benefits/Benefits";
 import { Steps } from "./components/Steps/Steps";
+import { Form } from "./components/Form/Form";
 import { Footer } from "./components/Footer/Footer";
 import { useExperiment } from "./hooks/useExperiment";
 import "./App.css";
@@ -59,6 +60,7 @@ function App() {
       />
       <Benefits />
       <Steps />
+      <Form experimentId={experimentId} variant={variant} />
       <Footer />
     </main>
   );
