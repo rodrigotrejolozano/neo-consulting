@@ -1,0 +1,53 @@
+.app {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::selection {
+  background-color: var(--color-primary-blue);
+  color: white;
+}
+
+::-moz-selection {
+  background-color: var(--color-primary-blue);
+  color: white;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-neutral-light);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-primary-blue);
+  border-radius: 4px;
+
+  &:hover {
+    background: #003d99;
+  }
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-primary-blue);
+  outline-offset: 2px;
+}
+
+@media print {
+  body {
+    background: white;
+  }
+
+  .app {
+    background: white;
+  }
+}
