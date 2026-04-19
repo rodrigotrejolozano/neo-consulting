@@ -63,7 +63,7 @@ export const Banner: React.FC<BannerProps> = ({
         <div className={styles.illustration}>
           <div className={styles.card}>
             <img
-              src="/assets/banner.png"
+              src={`${import.meta.env.BASE_URL}assets/banner.png`}
               alt="Banner"
               className={styles.bannerImg}
             />
